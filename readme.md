@@ -21,7 +21,17 @@ A Computer Vision tool capable of automatically detecting and removing watermark
 - [License](#license)
 
 ## Installation
+### Binary Installation
 
+For users who prefer a quick setup without installing Python dependencies, pre-built binaries are available for download.
+
+1. **Download the Latest Release**
+   Visit the [GitHub Releases page](https://github.com/Y252marc/Watermark-remover-YOLO8/releases/tag/v1.0.0) and download the appropriate binary for your operating system (Windows, macOS, or Linux).
+
+2. **Extract and Run**
+   Extract the downloaded archive to a directory of your choice. Run the executable directly. Ensure FFmpeg is installed on your system for video(it work fine without it but you will not get any audio) processing capabilities.
+
+### Manual installation
 ### Prerequisites
 
 - Python 3.8 or higher
@@ -161,22 +171,22 @@ The model demonstrated excellent learning progression across all key metrics:
 ### Performance Visualization
 
 #### Precision-Recall Curve
-![Precision-Recall Curve](Watermark-remover-YOLO8/runs/detect/watermark_v14/BoxPR_curve.png)
+![Precision-Recall Curve](runs/detect/watermark_v14/BoxPR_curve.png)
 
 *Analysis*: The curve shows optimal balance between precision and recall, with the model maintaining high performance across various confidence thresholds. The Area Under Curve (AUC) indicates excellent discriminatory power.
 
 #### Confusion Matrix
-![Confusion Matrix](Watermark-remover-YOLO8/runs/detect/watermark_v14/confusion_matrix.png)
+![Confusion Matrix](runs/detect/watermark_v14/confusion_matrix.png)
 
 *Analysis*: The normalized confusion matrix demonstrates minimal classification errors, with very low false positive and false negative rates, confirming the model's reliability in production scenarios.
 
 #### F1 Score Curve
-![F1 Score Curve](Watermark-remover-YOLO8/runs/detect/watermark_v14/BoxF1_curve.png)
+![F1 Score Curve](runs/detect/watermark_v14/BoxF1_curve.png)
 
 *Analysis*: The F1 curve peaks at high values throughout training, indicating consistent balance between precision and recall. This is crucial for watermark detection where both metrics are equally important.
 
 #### Training Progress Summary
-![Training Results](Watermark-remover-YOLO8/runs/detect/watermark_v14/results.png)
+![Training Results](runs/detect/watermark_v14/results.png)
 
 *Analysis*: The training curves show steady convergence with validation loss decreasing from 1.316 to 0.871, demonstrating effective learning without overfitting. The minimal gap between training and validation metrics indicates good generalization capability.
 
