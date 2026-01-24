@@ -1,0 +1,8 @@
+path: E:\User\ASUS\Documents\programmer boy\yolo-work\watermark detector\WatermarkRemover\assets
+
+# ONLY train on the fake data for now
+train: synthetic_dataset/images/train
+val: datasets/images/val
+
+names:
+  0: watermark

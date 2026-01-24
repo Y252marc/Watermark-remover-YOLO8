@@ -1,0 +1,10 @@
+# Absolute path to your project's dataset folder
+path: E:\User\ASUS\Documents\programmer boy\yolo-work\watermark detector\WatermarkRemover\assets\datasets
+
+# Folders relative to the 'path' above
+train: images/train
+val: images/val
+
+# Classes
+names:
+  0: watermark
