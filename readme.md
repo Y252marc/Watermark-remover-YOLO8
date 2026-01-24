@@ -1,6 +1,6 @@
 # Watermark Remover using YOLOv8
 
-A Computer Vision tool capable of automatically detecting and removing watermarks from videos. This project utilizes a hybrid AI pipeline, combining YOLOv8 for object detection and OpenCV/Inpainting for automated restoration.
+A Computer Vision tool capable of automatically detecting and removing watermarks from images and videos. This project utilizes a hybrid AI pipeline, combining YOLOv8 for object detection and OpenCV/Inpainting for automated restoration.
 
 ## Features
 
