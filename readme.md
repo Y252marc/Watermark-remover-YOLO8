@@ -120,7 +120,12 @@ cleaned_image = remover.remove(image, boxes)
 # Save result
 cv2.imwrite('cleaned_image.jpg', cleaned_image)
 ```
+Train a Custom Model
+To retrain the model on your own dataset:
 
+```Bash
+yolo task=detect mode=train model=yolov8n.pt data=data_final.yaml epochs=20 imgsz=640
+```
 ## Model Performance Analysis
 
 This section provides a comprehensive analysis of the v14 model's performance in watermark detection, trained on a real-world dataset containing 60,000 images (48,000 training + 12,000 validation).
