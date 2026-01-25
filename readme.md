@@ -26,7 +26,7 @@ A Computer Vision tool capable of automatically detecting and removing watermark
 For users who prefer a quick setup without installing Python dependencies, pre-built binaries are available for download.
 
 1. **Download the Latest Release**
-   Visit the [GitHub Releases page](https://github.com/Y252marc/Watermark-remover-YOLO8/releases/tag/v1.0.0) and download the appropriate binary for your operating system (Windows, macOS, or Linux).
+   Visit the [GitHub Releases page](https://github.com/Y252marc/Watermark-remover-YOLO8/releases) and download the appropriate binary for your operating system (Windows, macOS, or Linux).
 
 2. **Extract and Run**
    Extract the downloaded archive to a directory of your choice. Run the executable directly. Ensure FFmpeg is installed on your system for video(it work fine without it but you will not get any audio) processing capabilities.
