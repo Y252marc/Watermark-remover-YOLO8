@@ -274,36 +274,64 @@ These unsuccessful training runs highlight several critical lessons:
 
 The v14 model's success ultimately came from using high-quality, domain-relevant real-world data, demonstrating that data quality is the most critical factor in achieving robust AI performance.
 
-## Project Structure
+
+## 📦 Project Structure
 
 ```
-Watermark-remover-YOLO8/
-│
-├── assets/                     # Media files and datasets
-│   ├── input_videos/          # Raw video files
-│   ├── output_videos/         # Processed video outputs
-│   ├── datasets/              # Training/validation data
-│   └── test_image.jpg         # Sample test image
-│
-├── models/                     # Trained model weights
-│   └── watermark_yolo.pt      # Custom trained model
-│
-├── runs/                       # Training and detection results
-│   └── detect/
-│       └── watermark_v14/     # v14 model training outputs
-│
-├── src/                        # Source code
-│   ├── __init__.py
-│   ├── detector.py             # YOLO-based watermark detection
-│   ├── remover.py              # Inpainting-based removal
-│   ├── process_video.py        # Video processing pipeline
-│   ├── trainer.py              # Model training utilities
-│   └── verify_model.py         # Model validation tools
-│
-├── data.yaml                   # Dataset configuration
-├── main.py                     # Image processing entry point
-├── requirements.txt            # Python dependencies
-└── README.md                   # This file
+my-app/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx              # Main scanner page
+│   │   ├── layout.tsx            # Root layout + providers
+│   │   ├── globals.css           # Cyberpunk theme CSS
+│   │   ├── scan/
+│   │   │   └── [domain]/         # Deep Dive detail pages
+│   │   │       ├── layout.tsx    # Layout with sidebar
+│   │   │       ├── network/      # Network analysis
+│   │   │       ├── ports/        # Port scanning
+│   │   │       ├── ssl/          # SSL certificate
+│   │   │       ├── headers/      # HTTP headers
+│   │   │       ├── whois/        # WHOIS info
+│   │   │       ├── mail/         # Email security
+│   │   │       ├── subdomains/   # Subdomain enum
+│   │   │       ├── waf/          # WAF detection
+│   │   │       ├── carbon/       # Carbon footprint
+│   │   │       ├── sitemap/      # Sitemap analysis
+│   │   │       ├── techstack/    # Tech detection
+│   │   │       └── threats/      # Threat intel
+│   │   └── api/
+│   │       ├── scan-dns/         # DNS records lookup
+│   │       ├── scan-ssl/         # SSL certificate analysis
+│   │       ├── scan-headers/     # HTTP security headers
+│   │       ├── scan-whois/       # WHOIS information
+│   │       ├── scan-ports/       # TCP port scanning
+│   │       ├── scan-subdomains/  # Subdomain enumeration
+│   │       ├── scan-metadata/    # Page metadata extraction
+│   │       ├── scan-sitemap/     # robots.txt + sitemap
+│   │       ├── scan-techstack/   # Technology detection
+│   │       ├── scan-threats/     # Threat intelligence
+│   │       └── scan-security/    # Security score
+│   ├── components/
+│   │   ├── scanner/
+│   │   │   ├── ScannerForm.tsx       # Domain input
+│   │   │   ├── SmartScannerGrid.tsx  # 13-card dashboard
+│   │   │   ├── ScanSidebar.tsx       # Deep Dive navigation
+│   │   │   ├── DetailPageHeader.tsx  # Detail page header
+│   │   │   ├── RecentTargets.tsx     # History sidebar
+│   │   │   └── ThemeSelector.tsx     # Theme picker
+│   │   └── ui/                       # shadcn components
+│   ├── context/
+│   │   └── ScanContext.tsx           # Scan data sharing
+│   ├── hooks/
+│   │   └── useScanner.ts             # TanStack Query logic
+│   └── lib/
+│       ├── utils.ts
+│       └── pdf-export.ts             # PDF generation
+├── DEVLOG.md                         # Development log v1
+├── DEVLOG2.md                        # Development log v2
+├── package.json
+├── tailwind.config.ts
+└── next.config.mjs
 ```
 
 ## Contributing
